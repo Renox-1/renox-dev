@@ -1,0 +1,11 @@
+---
+const { role, org, date } = Astro.props;
+---
+
+<div class="bg-gray-800 p-6 rounded-xl shadow space-y-2">
+  <h3 class="text-lg font-semibold text-white">{role} @ {org}</h3>
+  <span class="text-sm text-gray-400">{date}</span>
+  <div class="text-gray-300 mt-2">
+    <slot />
+  </div>
+</div>

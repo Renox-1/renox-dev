@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Section from '../components/Section.astro';
+import ResumeItem from '../components/ResumeItem.astro';
+---
+
+<BaseLayout title="Resume | Benjamin Malek">
+
+  <Section id="experience" title="Experience">
+    <ResumeItem
+      role="IT Specialist"
+      org="U.S. Department of the Treasury"
+      date="June 2024 – Present"
+    >
+      Engineered custom Ansible modules and Terraform providers to interact with internal tooling. Configured and maintained RedHat Enterprise Linux and Windows Server images leading to a 99.48% compliance rate with enterprise security requirements. Integrated IaC with a larger Platform as a Service (PaaS) project by collaborating with other technical leads, allowing customers to self-service new servers from a ServiceNow form.
+    </ResumeItem>
+
+    <ResumeItem
+      role="Content Manager"
+      org="GameGym LLC"
+      date="January 2023 – April 2024"
+    >
+      Identified, developed, and implemented Python automation to notify different departments of completed tasks in the content pipeline. Led to a 95% reduction in missed content deadlines. Collaborated with software engineers on the implementation of a Content Management System used to manage the GameGym mobile application. Crafted user documentation and guides to assist with onboarding to the app. Supported any customer questions, comments, or concerns regarding content on the app.
+    </ResumeItem>
+
+    <ResumeItem
+      role="Quality Control Specialist"
+      org="Statespace (formerly ProGuides)"
+      date="January 2021 – December 2022"
+    >
+      Audited the customer journey to highlight issues such as technical bugs and unnecessary friction points leading to a 20% reduction in customer drop off during account sign up and purchase flows. Provided user feedback to the marketplace development team and crafted new marketplace features, resulting in a 65% jump in revenue over 1 year. Developed and implemented a custom Python script to track active support tickets. Reduced customer wait times by 20% and increased customer satisfaction with the support team by 15%.
+    </ResumeItem>
+  </Section>
+
+  <Section id="initiatives" title="Major Initiatives">
+    <ResumeItem
+      role="Infrastructure as Code"
+      org="U.S. Department of the Treasury"
+      date="2024"
+    >
+      Led design and deployment of Infrastructure as Code (IaC) for 200+ mission-critical virtual servers by leveraging Terraform to build virtual machines in VMWare and utilizing Ansible to deploy applications. Utilized Tekton to build and deploy container images for Terraform and Packer to an OpenShift cluster when a new update was detected. Reduced average time-to-deliver servers from 5 days to 2 days.
+    </ResumeItem>
+
+    <ResumeItem
+      role="GameGym Mobile Application"
+      org="GameGym LLC"
+      date="2023"
+    >
+      Designed and tested the core features of a video-based educational mobile app written in React including cloud-based content management with AWS and video integration with Vimeo. Developed an internal tool written in Python to standardize management and uploading of 500+ individual video files to our Content Management System. Spearheaded efforts to create automated and manual backups of important Windows and Linux machines to AWS, which prevented a loss of data when a video editor's computer was corrupted.
+    </ResumeItem>
+  </Section>
+
+  <Section id="skills" title="Skills">
+    <div class="space-y-4">
+      <div>
+        <h4 class="font-semibold mb-2">🛠️ Automation</h4>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-blue-700 text-white text-sm px-2 py-1 rounded">Terraform</span>
+          <span class="bg-blue-700 text-white text-sm px-2 py-1 rounded">Ansible</span>
+          <span class="bg-blue-700 text-white text-sm px-2 py-1 rounded">Tekton</span>
+          <span class="bg-blue-700 text-white text-sm px-2 py-1 rounded">vRealize Automation</span>
+          <span class="bg-blue-700 text-white text-sm px-2 py-1 rounded">Python</span>
+          <span class="bg-blue-700 text-white text-sm px-2 py-1 rounded">Bash</span>
+          <span class="bg-blue-700 text-white text-sm px-2 py-1 rounded">PowerShell</span>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">🖥️ System Administration</h4>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-green-700 text-white text-sm px-2 py-1 rounded">Linux</span>
+          <span class="bg-green-700 text-white text-sm px-2 py-1 rounded">Windows</span>
+          <span class="bg-green-700 text-white text-sm px-2 py-1 rounded">Firewalls</span>
+          <span class="bg-green-700 text-white text-sm px-2 py-1 rounded">Security Compliance</span>
+          <span class="bg-green-700 text-white text-sm px-2 py-1 rounded">Active Directory</span>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">☁️ Infrastructure & Cloud</h4>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-purple-700 text-white text-sm px-2 py-1 rounded">AWS Solutions Architect Associate</span>
+          <span class="bg-purple-700 text-white text-sm px-2 py-1 rounded">Azure</span>
+          <span class="bg-purple-700 text-white text-sm px-2 py-1 rounded">vCenter</span>
+          <span class="bg-purple-700 text-white text-sm px-2 py-1 rounded">Kubernetes/OpenShift</span>
+        </div>
+      </div>
+    </div>
+  </Section>
+
+  <Section id="pdf" title="Download PDF">
+    <a href="/resume.pdf" download class="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-500 transition">
+      📄 Download Resume PDF
+    </a>
+  </Section>
+
+</BaseLayout>

@@ -1,0 +1,78 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Section from '../components/Section.astro';
+---
+
+<BaseLayout title="Home | Benjamin Malek">
+
+  <section class="text-center py-16 animate-fade-in">
+    <h1 class="text-5xl font-extrabold tracking-tight mb-4">Benjamin Malek</h1>
+    <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+      DevOps-driven IT Specialist with a passion for automation, self-hosting, and systems that adapt and scale. I mix professional infrastructure with personal curiosity — all in one place.
+    </p>
+    <div class="mt-6 space-x-4">
+      <a href="/about" class="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-500 transition">About Me</a>
+      <a href="/resume" class="inline-block border border-blue-600 text-blue-400 px-6 py-2 rounded hover:bg-blue-600 hover:text-white transition">Resume</a>
+    </div>
+  </section>
+
+  <Section id="highlight" title="Highlights">
+    <ul class="list-disc list-inside space-y-2">
+      <li>⚙️ Deploys Infrastructure as Code with Terraform & Ansible</li>
+      <li>🌐 Self-hosts 90% of daily services with Kubernetes</li>
+      <li>🔋 Builds power-efficient, portable homelab setups</li>
+      <li>🧠 Tech-curious and always experimenting</li>
+    </ul>
+  </Section>
+
+  <Section id="learning" title="What I'm Learning">
+    <ul class="list-disc list-inside space-y-2 text-gray-300">
+      <li>📦 Diving deeper into Kubernetes and GitOps workflows</li>
+      <li>🛡️ Hardening self-hosted stacks with auth and observability</li>
+      <li>🧬 Exploring NixOS for reproducible system configs</li>
+      <li>🦀 Building CLI tools and scripts with Rust</li>
+    </ul>
+  </Section>
+
+  <Section id="infrastructure" title="Homelab Infrastructure">
+    <ul class="list-disc list-inside space-y-2 text-gray-300">
+      <li>💻 K3s cluster running on Raspberry Pi 5 nodes</li>
+      <li>🔌 Focused on efficiency and portability</li>
+      <li>🧰 Services include Pi-hole, WireGuard, MinIO, and Nginx</li>
+      <li>📊 Observability stack: Prometheus, Grafana, Loki</li>
+      <li>🔁 Automated deployments with GitHub Actions & Tekton</li>
+    </ul>
+  </Section>
+
+  <Section id="meta" title="Behind This Site">
+    <p class="text-gray-300 mb-4">
+      This site — and my blog at <strong><a href="https://blog.renox.dev">blog.renox.dev</a></strong> — is built with <strong>Astro</strong> and styled using <strong>Tailwind CSS</strong>. It’s deployed from GitHub via CI and served out of my own homelab through a Cloudflare Tunnel.
+    </p>
+    <p class="text-gray-400 italic">
+      The goal? Share, tinker, and maybe teach someone something new along the way.
+    </p>
+  </Section>
+
+  <Section id="gaming" title="Esports & Gaming Roots">
+    <div class="space-y-4 text-gray-300">
+      <p>Before my pivot to infrastructure, I worked at the cutting edge of esports — managing programs, building tooling, and creating scalable workflows in a space where rapid iteration is a survival skill.</p>
+      <p>That experience taught me to optimize under pressure, lead collaborative teams, and constantly adapt — skills that translate cleanly into DevOps and automation today.</p>
+    </div>
+  </Section>
+
+  <Section id="contact" title="Let's Talk">
+    <div class="bg-gray-800 p-6 rounded-xl shadow text-center">
+      <h3 class="text-xl font-semibold mb-2">Have a project or idea?</h3>
+      <p class="text-gray-400 mb-4">
+        Whether it's automation, self-hosting, or the most recent Counter-Strike tournament — I'm always up for a good convo.
+      </p>
+      <button 
+        onclick="navigator.clipboard.writeText('ben@renox.dev'); showToast()"
+        class="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-500 transition cursor-pointer"
+      >
+        📧 Email me! ben@renox.dev
+      </button>
+    </div>
+  </Section>
+
+</BaseLayout>

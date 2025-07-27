@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Section from '../components/Section.astro';
+---
+
+<BaseLayout title="About | Benjamin Malek">
+  <Section id="tech" title="Technology Interests">
+    <div class="grid sm:grid-cols-2 gap-6">
+      <div class="bg-gray-800 p-6 rounded-xl shadow">
+        <h3 class="text-lg font-semibold mb-2">⚙️ DevOps & Automation</h3>
+        <p>I love building and automating systems — from K3s clusters to CI/CD pipelines with Terraform, Ansible, and GitHub Actions.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl shadow">
+        <h3 class="text-lg font-semibold mb-2">🧪 Infrastructure as Code</h3>
+        <p>My infrastructure lives in Git — enabling reproducible, maintainable setups with version control and full transparency.</p>
+      </div>
+    </div>
+  </Section>
+
+  <Section id="gaming" title="Gaming & Esports">
+    <div class="grid sm:grid-cols-2 gap-6">
+      <div class="bg-gray-800 p-6 rounded-xl shadow">
+        <h3 class="text-lg font-semibold mb-2">🎮 Esports Background</h3>
+        <p>I worked in tournament production, coaching content, and platform development, blending my tech skills with competitive gaming.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl shadow">
+        <h3 class="text-lg font-semibold mb-2">🕹️ Gaming Today</h3>
+        <p>From strategic to fast-paced FPS, I still enjoy exploring tactical strategies, perfecting my moment to moment decision making, and learning what it takes to be the best.</p>
+      </div>
+    </div>
+  </Section>
+
+  <Section id="cooking" title="Cooking & Hobbies">
+    <div class="grid sm:grid-cols-2 gap-6">
+      <div class="bg-gray-800 p-6 rounded-xl shadow">
+        <h3 class="text-lg font-semibold mb-2">🍳 Culinary Experiments</h3>
+        <p>I use cooking as a stress relief outlet — after a long day at work, sometimes nothing is better than throwing on some music and working with my hands to put together something delicious.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl shadow">
+        <h3 class="text-lg font-semibold mb-2">🎵 Side Interests</h3>
+        <p>I enjoy boxing as a great workout and dabbling in music production. Always learning, always tinkering.</p>
+      </div>
+    </div>
+  </Section>
+</BaseLayout>
